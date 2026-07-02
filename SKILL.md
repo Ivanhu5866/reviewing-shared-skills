@@ -66,7 +66,9 @@ pad with praise.
   template, not five languages.
 - **Secrets:** never hardcode tokens/keys. If OAuth/API access is needed, require
   env vars or a config file, ship `.env.example`, and `.gitignore` the secrets.
-- **Portability:** no hardcoded user paths; runtime-agnostic where reasonable.
+- **Portability:** no hardcoded user paths, personal identity (author/committer/
+  email/username), or fixed model names in scripts or example blocks; use
+  placeholders or read at runtime. Runtime-agnostic where reasonable.
 - **Degrees of freedom:** specificity matches fragility — low freedom ("run exactly
   this") for fragile/sequential steps, high freedom (text) for open-ended ones.
 - **Cross-references:** name other skills with `REQUIRED`-style markers; never use

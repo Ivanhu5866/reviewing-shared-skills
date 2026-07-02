@@ -60,9 +60,21 @@ rules. Mechanical items are Blocking; judgment items are usually High/Nice.
       template with no documented setup flow is an incomplete pass).
 
 ## 10. Portability & generality
-- [ ] No hardcoded user-specific paths (e.g. /home/alice/...); use cwd or vars.
+No personal or machine-specific values baked in — not in scripts, and not in
+example/command blocks an agent might copy verbatim.
+- [ ] No hardcoded absolute/home paths (e.g. `/home/alice/...`, `/Users/bob/...`);
+      use cwd, `$HOME`, env vars, or a `<placeholder>`.
+- [ ] No hardcoded personal identity: committer/author name, `Signed-off-by`,
+      email, or username. Examples use `Your Name <your.email@example.com>`.
+- [ ] No hardcoded model/tool/account name that should vary (e.g.
+      `Assisted-by: Claude-Sonnet-4.5`); use `<model-name>` or read it at runtime.
+- [ ] Template snippet and its example agree — the example must NOT reintroduce a
+      real name/path the placeholder above it just abstracted away.
 - [ ] Runtime/OS-agnostic where reasonable; deps declared with install steps.
 - [ ] Works for others, not just the author's machine.
+
+  Quick scan: `grep -rniE '/home/[a-z]|/Users/[a-z]|signed-off-by:|@(gmail|canonical|example)' <skill-dir>`
+  — every hit must be a placeholder, not a real person/path.
 
 ## 11. Safety
 - [ ] Re-runnable / idempotent where it matters.
@@ -93,8 +105,11 @@ skill (subagent baseline + with-skill) on each runtime/model you intend to suppo
 ## Priority mapping
 - Blocking: frontmatter invalid, no example, hardcoded secrets, destructive default,
   fragile sequence left to improvisation (wrong degrees of freedom), a hardcoded
-  runtime tool/path that breaks the skill on other runtimes.
+  runtime tool/path that breaks the skill on other runtimes, a hardcoded absolute
+  path in a script that fails on another machine.
 - High: workflow-summary description, missing "not for", poor portability,
   no testing evidence, `@file` force-loading cross-references, runtime-specific
-  assumptions (tool names, instructions file, skills path).
-- Nice-to-have: keyword gaps, verbose sections, naming polish, missing license.
+  assumptions (tool names, instructions file, skills path), a real personal
+  identity (author/committer/email) or home path in an example block.
+- Nice-to-have: keyword gaps, verbose sections, naming polish, missing license,
+  hardcoded model name in an example.

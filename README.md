@@ -35,10 +35,12 @@ examples/
 
 ## Installation
 
-Copy or symlink this directory into your runtime's skills directory, e.g.:
+Copy or symlink this directory into your runtime's skills directory. Use the
+`~/.agents/skills/` alias (or your runtime's actual skills path, e.g.
+`~/.claude/skills/`, `~/.copilot/skills/`):
 
 ```bash
-ln -s "$(pwd)" ~/.copilot/skills/reviewing-shared-skills
+ln -s "$(pwd)" ~/.agents/skills/reviewing-shared-skills
 ```
 
 ## License

@@ -10,8 +10,9 @@ license: MIT
 
 Review a candidate skill before it is shared with others. Check it against
 general skill-authoring standards plus common-sense practical requirements, then
-hand back a written report: pass/fail per rule with prioritized fixes. The author
-fixes the issues; this skill does not rewrite their skill.
+hand back a written report: prioritized fixes (Blocking/High/Nice-to-have) plus a
+ship/no-ship verdict. The author fixes the issues; this skill does not rewrite
+their skill.
 
 This complements `writing-skills` (how to build a skill) by being the gate (is it
 good enough to share). It is for any skill author, not one team.

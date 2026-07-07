@@ -71,8 +71,6 @@ pad with praise.
   this") for fragile/sequential steps, high freedom (text) for open-ended ones.
 - **Cross-references:** name other skills with `REQUIRED`-style markers; never use
   `@file` links that force-load and burn context.
-- **Testing evidence:** the author actually exercised the skill (baseline +
-  with-skill), scripts run as written.
 - **Common sense:** declared deps/setup, safe re-runs, no destructive action
   without confirmation, no time-sensitive content, license if shared publicly.
 - **Cross-runtime portability:** speaks in actions not a runtime's tool names; no

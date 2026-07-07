@@ -13,7 +13,7 @@ skill does not rewrite their skill. For any skill author, not a specific team.
 
 ```
 SKILL.md                            # workflow + report format + key rules
-references/skill-rules-checklist.md # 12 rule categories, Pass/Fail/Warn
+references/skill-rules-checklist.md # 11 rule categories, Pass/Fail/Warn
 examples/
   sample-skill-SKILL.md             # a flawed candidate skill
   sample-review-report.md           # its completed review
@@ -27,12 +27,11 @@ examples/
 4. Token efficiency
 5. Degrees of freedom
 6. Cross-references
-7. Testing evidence
-8. License & attribution
-9. Secrets & config (no hardcoded tokens; env vars / config file + setup docs)
-10. Portability & generality
-11. Safety
-12. Cross-runtime portability (Claude, Gemini, Copilot)
+7. License & attribution
+8. Secrets & config (no hardcoded tokens; env vars / config file + setup docs)
+9. Portability & generality
+10. Safety
+11. Cross-runtime portability (Claude, Gemini, Copilot)
 
 ## Installation
 

@@ -42,15 +42,10 @@ rules. Mechanical items are Blocking; judgment items are usually High/Nice.
       (e.g. **REQUIRED:** Use `other-skill`), not vague "see …".
 - [ ] No `@file` links that force-load files and burn context.
 
-## 7. Testing evidence
-- [ ] Author shows the skill was actually exercised, not just written.
-- [ ] For discipline/rule skills: baseline (fails without skill) + with-skill pass.
-- [ ] Bundled scripts/commands are runnable as written.
-
-## 8. License & attribution
+## 7. License & attribution
 - [ ] If shared publicly, a `license` (and attribution if adapted) is present.
 
-## 9. Secrets & config (Blocking)
+## 8. Secrets & config (Blocking)
 - [ ] No hardcoded tokens, keys, passwords, or personal emails.
 - [ ] If OAuth/API tokens needed: use env vars or a config file.
 - [ ] `.env.example` / `config.*.template` shipped; secrets in `.gitignore`.
@@ -59,7 +54,7 @@ rules. Mechanical items are Blocking; judgment items are usually High/Nice.
 - [ ] If a config template ships, its setup steps actually exist somewhere (a
       template with no documented setup flow is an incomplete pass).
 
-## 10. Portability & generality
+## 9. Portability & generality
 No personal or machine-specific values baked in — not in scripts, and not in
 example/command blocks an agent might copy verbatim.
 - [ ] No hardcoded absolute/home paths (e.g. `/home/alice/...`, `/Users/bob/...`);
@@ -76,12 +71,12 @@ example/command blocks an agent might copy verbatim.
   Quick scan: `grep -rniE '/home/[a-z]|/Users/[a-z]|signed-off-by:|@(gmail|canonical|example)' <skill-dir>`
   — every hit must be a placeholder, not a real person/path.
 
-## 11. Safety
+## 10. Safety
 - [ ] Re-runnable / idempotent where it matters.
 - [ ] No destructive actions (delete, force-push, prod writes) without confirmation.
 - [ ] Privacy: no sensitive data sent to third parties.
 
-## 12. Cross-runtime portability
+## 11. Cross-runtime portability
 Static checks flag risk; the only real proof is running the skill on each target
 runtime/model (Claude, Gemini, Copilot, …) — see note below.
 - [ ] Speaks in actions ("read the file", "dispatch a subagent", "create a todo"),
@@ -108,7 +103,7 @@ skill (subagent baseline + with-skill) on each runtime/model you intend to suppo
   runtime tool/path that breaks the skill on other runtimes, a hardcoded absolute
   path in a script that fails on another machine.
 - High: workflow-summary description, missing "not for", poor portability,
-  no testing evidence, `@file` force-loading cross-references, runtime-specific
+  `@file` force-loading cross-references, runtime-specific
   assumptions (tool names, instructions file, skills path), a real personal
   identity (author/committer/email) or home path in an example block.
 - Nice-to-have: keyword gaps, verbose sections, naming polish, missing license,

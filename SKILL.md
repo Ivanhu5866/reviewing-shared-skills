@@ -50,9 +50,6 @@ candidate yourself. This is review-only.
 
 ## Nice-to-have
 - [rule] problem — fix
-
-## Passed
-- short list of rules that passed
 ```
 
 Keep notes terse. Tie every issue to a checklist rule and a concrete fix. Do not

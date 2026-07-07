@@ -22,8 +22,3 @@
 - [Time-sensitive] "As of June 2026 … current v3 API" will rot. Drop the date.
 - [Examples] Example has no error handling and no comments explaining WHY.
 - [Keywords] Add searchable terms: "offline issues", "mirror", "export issues".
-
-## Passed
-- Has a concrete, runnable example (just unsafe).
-- Overview states what it does in one sentence.
-- Single language, not a fill-in template.

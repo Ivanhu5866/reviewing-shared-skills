@@ -1,12 +1,13 @@
 # reviewing-shared-skills
 
-An agent skill for reviewing other skills before they are shared, published, or merged.
+An agent skill for reviewing another skill before it is shared — its job is to
+**find the things worth fixing** so the skill is ready to share.
 
 It checks a candidate skill against general skill-authoring standards (superpowers
 `writing-skills` + Anthropic best-practices) plus common-sense practical rules, then
-produces a written report: pass/fail per rule with prioritized fixes and a
-ship / no-ship verdict. The author fixes the issues; this skill does not rewrite
-their skill. For any skill author, not a specific team.
+produces a written report: prioritized fixes (Blocking / High / Nice-to-have) and a
+ship / no-ship verdict. It surfaces problems only — the author fixes them; this
+skill does not rewrite their skill. For any skill author, not a specific team.
 
 ## Contents
 

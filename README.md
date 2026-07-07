@@ -7,7 +7,7 @@ It checks a candidate skill against general skill-authoring standards (superpowe
 `writing-skills` + Anthropic best-practices) plus common-sense practical rules, then
 produces a written report: prioritized fixes (Blocking / High / Nice-to-have) and a
 ship / no-ship verdict. It surfaces problems only — the author fixes them; this
-skill does not rewrite their skill. For any skill author, not a specific team.
+skill does not rewrite their skill.
 
 ## Contents
 

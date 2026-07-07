@@ -1,6 +1,6 @@
 ---
 name: reviewing-shared-skills
-description: Use when reviewing a skill an author wants to share before it is published or merged, when checking a SKILL.md against authoring standards, or when asked to vet a skill for missing examples, hardcoded secrets, or weak descriptions.
+description: Use when reviewing a skill an author wants to share before it is published or merged, when you need a skill review or want to vet a SKILL.md against authoring standards, or when asked to check a skill for missing examples, hardcoded secrets, or weak descriptions.
 license: MIT
 ---
 
@@ -14,8 +14,8 @@ hand back a written report: prioritized fixes (Blocking/High/Nice-to-have) plus 
 ship/no-ship verdict. The author fixes the issues; this skill does not rewrite
 their skill.
 
-This complements `writing-skills` (how to build a skill) by being the gate (is it
-good enough to share). It is for any skill author, not one team.
+This complements **`writing-skills`** (how to build a skill) by being the gate (is
+it good enough to share).
 
 ## When to Use
 

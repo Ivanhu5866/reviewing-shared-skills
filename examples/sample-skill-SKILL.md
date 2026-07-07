@@ -24,5 +24,5 @@ That's it. As of June 2026 this uses the current v3 API.
 
 <!--
 NOTE: this sample skill is intentionally flawed. It is review fodder for the
-sharing-skill-review skill. See ../examples/sample-review-report.md.
+reviewing-shared-skills skill. See ./sample-review-report.md.
 -->

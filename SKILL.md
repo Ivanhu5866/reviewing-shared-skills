@@ -1,6 +1,6 @@
 ---
 name: reviewing-shared-skills
-description: Use when reviewing a skill an author wants to share before it is published or merged, when checking a SKILL.md against authoring standards, or when asked to vet a skill for missing examples, hardcoded secrets, or weak descriptions. For any skill author, not a specific team.
+description: Use when reviewing a skill an author wants to share before it is published or merged, when checking a SKILL.md against authoring standards, or when asked to vet a skill for missing examples, hardcoded secrets, or weak descriptions.
 license: MIT
 ---
 
@@ -23,8 +23,8 @@ good enough to share). It is for any skill author, not one team.
 - You are asked to vet, audit, or sign off on a SKILL.md.
 - A skill "doesn't activate" or feels low quality and needs a structured check.
 
-Not for: writing a skill from scratch (use `writing-skills`), or fixing the
-candidate yourself. This is review-only.
+Not for: writing a skill from scratch (**Use `writing-skills`** instead), or
+fixing the candidate yourself. This is review-only.
 
 ## Workflow
 
